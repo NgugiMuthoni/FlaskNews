@@ -35,6 +35,7 @@ def get_sources(category):
 
     return sources_results
 
+
 def process_results(source_list):
     '''
     Function that process the source results and transforms them to a list objects
