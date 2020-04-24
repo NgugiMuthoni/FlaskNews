@@ -1,7 +1,7 @@
 {% macro displayNews(category) %} {% for category in category %}
-<div class="card border-primary  col-md-4 aqua-gradient">
+<div class="card border-primary  col-md-4 aqua-gradient text-light">
     <div class="card-header">{{category.name}}</div>
-    <div class="card-body">
+    <div class="card-body text-light">
         <p class="card-text">{{category.description|truncate(150)}}
             <br>
             <a href="/articles/{{category.id}}&40"><button type="button" class="btn btn-primary btn-sm">Read Articles</button></a></p>

@@ -15,30 +15,30 @@
                         <img src="{{article.urlToImage}}" alt="IMAGE LOADING...">
                     </a>
                 </div>
-            <div class="card-body">
-                <div class="card-text">
-                    <h4 class="text-bold text-truncate"> {{article.title}} </h4>
-                    <p class="text-truncate"> {{article.description}}... </p>
+                <div class="card-body">
+                    <div class="card-text">
+                        <h4 class="text-bold text-truncate"> {{article.title}} </h4>
+                        <p class="text-truncate"> {{article.description}}... </p>
 
 
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-columns">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="small">- {{article.author}} </p>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="small">Posted on {{article.publishedAt}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href={{article.url}} target="_blank">Read More</a>
+
+                    </div>
                 </div>
-               <div class="card-footer">
-                   <div class="card-columns">
-                       <div class="row">
-                           <div class="col-md-6">
-                                <p class="small">- {{article.author}} </p>
-
-                           </div>
-                           <div class="col-md-6">
-                               <p class="small">Posted on {{article.publishedAt}}</p>
-                           </div>
-                       </div>
-                   </div>
-                   <hr>
-                    <a href={{article.url}} target="_blank">Read More</a>
-
-               </div>
-            </div>
             </div>
         </div>
         {% endfor %}
