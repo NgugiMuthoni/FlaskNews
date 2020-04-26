@@ -6,7 +6,6 @@ class TestArticles(unittest.TestCase):
     '''
     Test class to test the behavior of the articles class
     '''
-
     def setUp(self):
         '''
         Test class to run before other tests

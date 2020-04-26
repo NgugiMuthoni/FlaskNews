@@ -32,7 +32,6 @@ def get_sources(category):
         if get_sources_response['sources']:
             sources_results_list = get_sources_response['sources']
             sources_results = process_results(sources_results_list)
-
     return sources_results
 
 
@@ -56,11 +55,9 @@ def process_results(source_list):
         url = source_item.get('url')
         category = source_item.get('category')
         country = source_item.get('country')
-
         if url:
             source_object = Sources(id, name, description, url, category, country)
         source_results.append(source_object)
-
     return source_results
 
 
@@ -78,7 +75,6 @@ def get_articles(source_id, limit):
 
         if articles_location_response['articles']:
             articles_location_results = process_articles(articles_location_response['articles'])
-
     return articles_location_results
 
 
@@ -94,9 +90,7 @@ def process_articles(my_articles):
         description = article.get('description')
         url = article.get('url')
         urlToImage = article.get('urlToImage')
-
         if urlToImage:
             article_source_object = Articles(author, title, description, url, urlToImage)
             article_location_list.append(article_source_object)
-
     return article_location_list
